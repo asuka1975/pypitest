@@ -14,5 +14,6 @@ services:
         source: "./packages"
         target: "/opt/app/packages"
   server:
-    image: pypiserver/pypiserver
+    build:
+      context: server/
     
