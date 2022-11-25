@@ -13,3 +13,6 @@ services:
       - type: bind
         source: "./packages"
         target: "/opt/app/packages"
+  server:
+    image: pypiserver/pypiserver
+    
